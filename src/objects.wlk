@@ -1,8 +1,14 @@
 object spa {
 	
 	method atender(persona){
-		persona.recibirMasaje()
-		persona.banoVapor()
+		if(persona == "bruno" or persona == "ramiro"){
+			persona.recibirMasaje()
+			persona.banoVapor()
+		}else{
+			persona.recibirMasaje()
+		}
+		
+		
 	}
 	
 }
@@ -17,6 +23,7 @@ object olivia{
 	method discutir(){
 		concentracion = concentracion - 1
 	}
+	
 	
 	method gradoDeConcentracion(){
 		return concentracion
